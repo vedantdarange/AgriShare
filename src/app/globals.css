@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  /* Warm functional minimalist palette */
+  --background: #f5f1ea;
+  --foreground: #44403c; /* stone-700 */
+  --heading: #1c1917; /* stone-900 */
+  --accent: #d97706; /* amber-600 - subtle organic touch */
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-heading: var(--heading);
+  --color-accent: var(--accent);
+  
+  /* Font Override will be handled by next/font in layout, mapped to sans */
+  --font-sans: var(--font-inter); 
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Lenis Recommended Styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

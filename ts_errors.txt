@@ -1,0 +1,5 @@
+src/app/(app)/checkout/page.tsx(135,20): error TS2339: Property 'getSubtotal' does not exist on type 'CartStore'.
+src/app/(app)/checkout/page.tsx(189,37): error TS2339: Property 'product' does not exist on type 'CartItem'.
+src/app/(app)/checkout/page.tsx(496,105): error TS2339: Property 'product' does not exist on type 'CartItem'.
+src/app/(app)/checkout/page.tsx(497,122): error TS2339: Property 'product' does not exist on type 'CartItem'.
+src/app/(app)/checkout/page.tsx(499,117): error TS2339: Property 'product' does not exist on type 'CartItem'.
